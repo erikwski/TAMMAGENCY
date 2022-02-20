@@ -55,3 +55,6 @@ h6 {
 .shift_for_logo {
   transform: translateX(-40px);
 }
+.fill_white {
+  fill: #fff;
+}
