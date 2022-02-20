@@ -1,0 +1,57 @@
+@font-face {
+  /* MONTSERRAT 900*/
+  font-family: montserrat;
+  font-weight: normal;
+  src: url(fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  /* WORKSANS 300*/
+  font-family: worksans;
+  font-weight: normal;
+  src: url(fonts/WorkSans-Medium.ttf);
+}
+:root {
+  --primary: #283276;
+  --secondary: #823f91;
+  --thirdary: #4399ca;
+  --background: #1052a9;
+}
+.bc_primary {
+  background: var(--primary);
+}
+.c_primary {
+  color: var(--primary);
+}
+.bc_secondary {
+  background: var(--secondary);
+}
+.c_secondary {
+  color: var(--secondary);
+}
+.bc_thirdary {
+  background: var(--thirdary);
+}
+.c_thirdary {
+  color: var(--thirdary);
+}
+
+.gradient {
+  background: linear-gradient(90deg, var(--thirdary) 0%, var(--primary) 100%);
+}
+body {
+  font-family: "worksans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
+}
+.to_the_moon {
+  transform: translateX(-1000px) translateY(-100px) scale(0.5);
+}
+.shift_for_logo {
+  transform: translateX(-40px);
+}
