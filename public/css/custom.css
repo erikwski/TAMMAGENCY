@@ -34,6 +34,9 @@
 .c_thirdary {
   color: var(--thirdary);
 }
+.fill_secondary {
+  fill: var(--secondary);
+}
 
 .gradient {
   background: linear-gradient(90deg, var(--thirdary) 0%, var(--primary) 100%);
@@ -57,4 +60,76 @@ h6 {
 }
 .fill_white {
   fill: #fff;
+}
+/* SERVIZI CUSTOM */
+.card_servizi {
+  background: #823f9108;
+  padding: 1.5rem 1.25rem 1rem;
+  width: 30%;
+  margin: 1rem 1.666667%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px -2px var(--secondary);
+}
+.card_servizi h6 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+}
+.card_servizi h5 {
+  font-size: 1.6rem;
+  margin-top: -6px;
+  padding-left: 5px;
+}
+.badge_service {
+  padding: 3px 1rem;
+  font-style: italic;
+  border-radius: 1rem;
+  margin: 5px 8px;
+  color: #fff;
+}
+.scroll_to_dett_service {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  background: var(--secondary);
+  color: #fff;
+}
+.wski_hover_btn {
+  transition: 0.5s all;
+}
+.wski_hover_btn:hover {
+  padding: 1.2rem;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -1px rgb(0 0 0 / 20%);
+}
+@media screen and (min-width: 1301px) {
+  .negative_top_bigscreen {
+    margin-top: -2rem !important;
+  }
+  .positive_top_bigscreen {
+    margin-top: 5rem !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .card_servizi {
+    width: 45%;
+    margin: 1rem 2.5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card_servizi {
+    width: 90%;
+    margin: 1rem 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card_servizi {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .resize_width_mobile_service {
+    max-width: calc(100% - 2rem) !important;
+  }
+  .adapt_title_mobile {
+    font-size: 2.75rem;
+  }
 }
