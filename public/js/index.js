@@ -16,6 +16,10 @@ document.addEventListener("scroll", function () {
   scrolled_edit(scrollpos > 80);
 });
 
+$(".header_strategy").click(function () {
+  $(this).parents(".overflow-hidden").find(".body_strategy").toggle(700);
+});
+
 // MOBILE MENU ONCLICK
 
 var navMenuDiv = document.getElementById("nav-content");
@@ -23,7 +27,7 @@ var navMenu = document.getElementById("nav-toggle");
 
 document.onclick = check;
 function check(e) {
-  var target = (e && e.target) || (event && event.srcElement);
+  var target = e && e.target;
 
   //Nav Menu
   if (!checkParent(target, navMenuDiv)) {

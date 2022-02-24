@@ -34,8 +34,8 @@
 .c_thirdary {
   color: var(--thirdary);
 }
-.fill_secondary {
-  fill: var(--secondary);
+.fill_varbg {
+  fill: var(--background);
 }
 
 .gradient {
@@ -69,6 +69,13 @@ h6 {
   margin: 1rem 1.666667%;
   border-radius: 8px;
   box-shadow: 1px 1px 6px -2px var(--secondary);
+  position: relative;
+}
+.service_icon {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
 }
 .card_servizi h6 {
   color: var(--secondary);
@@ -132,4 +139,14 @@ h6 {
   .adapt_title_mobile {
     font-size: 2.75rem;
   }
+}
+/* STRATEGY SECTION */
+.card_strategy {
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(90deg, var(--background), var(--primary));
+}
+.show_details_strat {
+  top: calc(50% - 0.75rem);
+  right: 1rem;
 }
