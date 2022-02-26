@@ -37,9 +37,24 @@
 .fill_varbg {
   fill: var(--background);
 }
+.italic_title {
+  font-family: "montserrat";
+  font-style: italic;
+}
 
 .gradient {
   background: linear-gradient(90deg, var(--thirdary) 0%, var(--primary) 100%);
+}
+.gradient_btn {
+  background: linear-gradient(45deg, var(--thirdary) 0%, var(--primary) 100%);
+  transition: 0.5s;
+}
+.gradient_btn:hover {
+  box-shadow: 0 2px 5px -2px #000;
+  transform: scale(1.05);
+}
+.title_font {
+  font-family: "montserrat";
 }
 body {
   font-family: "worksans", sans-serif;
@@ -61,84 +76,36 @@ h6 {
 .fill_white {
   fill: #fff;
 }
+.primary_font {
+  font-family: "montserrat";
+}
 /* SERVIZI CUSTOM */
 .card_servizi {
-  background: #823f9108;
-  padding: 1.5rem 1.25rem 1rem;
-  width: 30%;
-  margin: 1rem 1.666667%;
-  border-radius: 8px;
-  box-shadow: 1px 1px 6px -2px var(--secondary);
-  position: relative;
-}
-.service_icon {
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  width: 100%;
-}
-.card_servizi h6 {
-  color: var(--secondary);
-  font-size: 1.5rem;
-}
-.card_servizi h5 {
-  font-size: 1.6rem;
-  margin-top: -6px;
-  padding-left: 5px;
-}
-.badge_service {
-  padding: 3px 1rem;
-  font-style: italic;
+  box-shadow: 0 0 5px -3px var(--thirdary);
+  padding: 1rem 1rem 0;
   border-radius: 1rem;
-  margin: 5px 8px;
-  color: #fff;
 }
-.scroll_to_dett_service {
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  font-weight: 600;
-  background: var(--secondary);
-  color: #fff;
-}
-.wski_hover_btn {
-  transition: 0.5s all;
-}
-.wski_hover_btn:hover {
-  padding: 1.2rem;
-  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%),
-    0 3px 1px -1px rgb(0 0 0 / 20%);
-}
-@media screen and (min-width: 1301px) {
-  .negative_top_bigscreen {
-    margin-top: -2rem !important;
-  }
-  .positive_top_bigscreen {
-    margin-top: 5rem !important;
-  }
-}
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1024px) {
   .card_servizi {
-    width: 45%;
-    margin: 1rem 2.5%;
+    padding: 2rem 1rem 0;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1500px) {
   .card_servizi {
-    width: 90%;
-    margin: 1rem 5%;
+    padding: 2rem 2rem 0;
   }
 }
-@media screen and (max-width: 500px) {
-  .card_servizi {
-    width: 100%;
-    margin: 1rem 0;
-  }
-  .resize_width_mobile_service {
-    max-width: calc(100% - 2rem) !important;
-  }
-  .adapt_title_mobile {
-    font-size: 2.75rem;
-  }
+.list_service li:nth-child(1) {
+  color: #000e68;
+}
+.list_service li:nth-child(2) {
+  color: #001497;
+}
+.list_service li:nth-child(3) {
+  color: #0017ac;
+}
+.list_service li:nth-child(4) {
+  color: #001cd1;
 }
 /* STRATEGY SECTION */
 .card_strategy {
