@@ -17,7 +17,11 @@ document.addEventListener("scroll", function () {
 });
 
 $(".header_strategy").click(function () {
+  $(".body_strategy:visible").toggle(400);
   $(this).parents(".overflow-hidden").find(".body_strategy").toggle(700);
+  let hidden_ico = $(this).find(".show_details_strat svg.hidden");
+  $(this).find(".show_details_strat svg").addClass("hidden");
+  hidden_ico.removeClass("hidden");
 });
 
 // MOBILE MENU ONCLICK
