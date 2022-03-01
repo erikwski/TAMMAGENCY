@@ -82,33 +82,33 @@ h6 {
 /* SERVIZI CUSTOM */
 .card_servizi {
   box-shadow: 0 0 5px -3px var(--thirdary);
-  padding: 1rem 1rem 0;
+  padding: 100px 1rem 1.5rem;
   border-radius: 1rem;
-}
-@media screen and (min-width: 1024px) {
-  .card_servizi {
-    padding: 2rem 1rem 0;
-  }
 }
 @media screen and (min-width: 1500px) {
   .card_servizi {
-    padding: 2rem 2rem 0;
+    padding: 100px 2rem 1.5rem;
   }
 }
-.list_service li:nth-child(1) {
-  color: #000e68;
+.smoke_transition {
+  transition: 0.7s;
 }
-.list_service li:nth-child(2) {
-  color: #001497;
+
+.list_service div {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
-.list_service li:nth-child(3) {
-  color: #0017ac;
+.list_service div:nth-child(1) {
+  background: #000e68;
 }
-.list_service li:nth-child(4) {
-  color: #001cd1;
+.list_service div:nth-child(2) {
+  background: #001497;
 }
-.list_az_local .mr-2 {
-  margin-top: 3px;
+.list_service div:nth-child(3) {
+  background: #0017ac;
+}
+.list_service div:nth-child(4) {
+  background: #001cd1;
 }
 /* STRATEGY SECTION */
 .card_strategy {
