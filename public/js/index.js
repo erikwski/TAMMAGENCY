@@ -14,15 +14,32 @@ document.addEventListener("scroll", function () {
   /*Apply classes for slide in bar*/
   scrollpos = window.scrollY;
   scrolled_edit(scrollpos > 80);
+  $(window).scrollTop() + $(window).height() + 500 > $(document).height()
+    ? $("#rightbar_social").addClass("active_social")
+    : $("#rightbar_social").removeClass("active_social");
 });
-
+//STRATEGY TOGGLE
 $(".header_strategy").click(function () {
-  $(".body_strategy:visible").toggle(400);
+  $(".body_strategy:visible")
+    .not($(this).parents(".overflow-hidden").find(".body_strategy"))
+    .parents(".overflow-hidden")
+    .find(".show_details_strat svg")
+    .addClass("hidden");
+  $(".body_strategy:visible")
+    .not($(this).parents(".overflow-hidden").find(".body_strategy"))
+    .parents(".overflow-hidden")
+    .find(".show_details_strat .show_down")
+    .removeClass("hidden");
+  $(".body_strategy:visible")
+    .not($(this).parents(".overflow-hidden").find(".body_strategy"))
+    .toggle(400);
   $(this).parents(".overflow-hidden").find(".body_strategy").toggle(700);
   let hidden_ico = $(this).find(".show_details_strat svg.hidden");
   $(this).find(".show_details_strat svg").addClass("hidden");
   hidden_ico.removeClass("hidden");
 });
+//SMOOTH SCROLL ON CLICK ON LINK
+$("a").click(() => $("html").css("scrollBehavior", "smooth"));
 
 // MOBILE MENU ONCLICK
 
