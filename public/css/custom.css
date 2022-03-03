@@ -109,7 +109,7 @@ h6 {
 }
 /* SERVIZI CUSTOM */
 .card_servizi {
-  box-shadow: 0 0 5px -2px var(--thirdary);
+  box-shadow: 0 0 7px -1px var(--thirdary);
   padding: 100px 1rem 1.5rem;
   border-radius: 1rem;
 }

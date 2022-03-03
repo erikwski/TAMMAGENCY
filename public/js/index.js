@@ -1,3 +1,9 @@
+//INIT LOAD ON SCROLL
+AOS.init({
+  once: true,
+  offset: 50,
+});
+
 var scrollpos = window.scrollY;
 var header = document.getElementById("header");
 var logo = document.getElementById("logo");
