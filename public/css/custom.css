@@ -260,7 +260,7 @@ h6 {
   position: absolute;
   bottom: 1rem;
   left: calc(50% - 50px);
-  animation: loading_logo 0.3s linear infinite both;
+  animation: loading_logo 0.8s 0.2s linear both;
 }
 .throw_to_moon_again {
   transition: bottom 1.2s 0.5s;
@@ -268,22 +268,13 @@ h6 {
 }
 @keyframes loading_logo {
   0% {
-    transform: translate(0);
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
   }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
+  50% {
+    transform: scale(2) rotate3d(-1, 1, 0, 180deg);
   }
   100% {
-    transform: translate(0);
+    transform: scale(1) rotate3d(-1, 1, 0, 360deg);
   }
 }
 .shift_for_logo {
