@@ -1,7 +1,8 @@
 //INIT LOAD ON SCROLL
 AOS.init({
   once: true,
-  offset: 50,
+  offset: 200,
+  duration: 800,
 });
 
 var scrollpos = window.scrollY;
@@ -123,3 +124,7 @@ function checkParent(t, elm) {
   }
   return false;
 }
+
+setTimeout(() => {
+  $("html").addClass("loaded");
+}, 1000);
