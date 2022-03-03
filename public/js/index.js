@@ -124,7 +124,9 @@ function checkParent(t, elm) {
   }
   return false;
 }
-
+$(window).on("beforeunload", function () {
+  $(window).scrollTop(0);
+});
 setTimeout(() => {
   $("#loading_logo").addClass("throw_to_moon_again");
   setTimeout(() => {
