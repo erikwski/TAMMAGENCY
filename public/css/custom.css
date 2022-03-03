@@ -131,6 +131,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: calc(50% - var(--cell-size) - var(--cell-size));
   left: calc(50% - var(--cell-size) - var(--cell-size));
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .mosaic-loader > .cell {
   flex: 0 0 var(--cell-size);
