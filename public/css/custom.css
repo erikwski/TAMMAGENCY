@@ -255,6 +255,37 @@ h6 {
     opacity: 1;
   }
 }
+#loading_logo {
+  width: 100px;
+  position: absolute;
+  bottom: 1rem;
+  left: calc(50% - 50px);
+  animation: loading_logo 0.3s linear infinite both;
+}
+.throw_to_moon_again {
+  transition: bottom 1.2s 0.5s;
+  bottom: calc(100% + 200px) !important;
+}
+@keyframes loading_logo {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .shift_for_logo {
   transform: translateX(-40px);
 }

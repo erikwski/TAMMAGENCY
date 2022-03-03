@@ -126,5 +126,8 @@ function checkParent(t, elm) {
 }
 
 setTimeout(() => {
-  $("html").addClass("loaded");
-}, 1000);
+  $("#loading_logo").addClass("throw_to_moon_again");
+  setTimeout(() => {
+    $("html").addClass("loaded");
+  }, 500);
+}, 500);
