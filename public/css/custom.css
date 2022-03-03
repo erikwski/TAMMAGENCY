@@ -258,7 +258,7 @@ h6 {
 #loading_logo {
   width: 100px;
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   left: calc(50% - 50px);
   animation: loading_logo 0.8s 0.2s linear both;
 }
